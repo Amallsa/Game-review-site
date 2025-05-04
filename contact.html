@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GameCritic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GameCritic</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="browse.php">Browse Games</a></li>
+                <li><a href="add_game.php">Add Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="form-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We'd love to hear from you! Whether you have a question about our game reviews, want to suggest a feature, or just want to say hello, feel free to reach out to us.</p>
+
+                    <div style="margin-top: 1.5rem;">
+                        <p><strong>Email:</strong> info@gamecritic.com</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Address:</strong> 123 Gaming Avenue, Gametown, GT 12345</p>
+                    </div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <h4>Follow Us</h4>
+                        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                            <a href="#" style="text-decoration: none; color: #333;">Facebook</a>
+                            <a href="#" style="text-decoration: none; color: #333;">Instagram</a>
+                            <a href="#" style="text-decoration: none; color: #333;">Twitter</a>
+                            <a href="#" style="text-decoration: none; color: #333;">Discord</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" action="contact_submit.html" method="GET">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GameCritic</h3>
+                <p>Discover and read reviews of the latest and greatest video games from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="browse.php">Browse Games</a></li>
+                    <li><a href="add_game.php">Add Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@gamecritic.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameCritic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

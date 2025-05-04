@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent - GameCritic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Display the name when the page loads
+        window.onload = function() {
+            var name = getUrlParameter('name');
+            if (name) {
+                document.getElementById('user-name').textContent = name;
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GameCritic</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="browse.php">Browse Games</a></li>
+                <li><a href="add_game.php">Add Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div style="text-align: center; padding: 4rem 0;">
+                <h2>Thank You!</h2>
+                <p style="font-size: 1.2rem; margin: 1.5rem 0;">
+                    Thank you, <span id="user-name">there</span>! Your message has been sent successfully.
+                </p>
+                <p>We'll get back to you as soon as possible.</p>
+
+                <div style="margin-top: 2rem;">
+                    <a href="index.php" class="btn">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GameCritic</h3>
+                <p>Discover and read reviews of the latest and greatest video games from around the world.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="browse.php">Browse Games</a></li>
+                    <li><a href="add_game.php">Add Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@gamecritic.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameCritic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

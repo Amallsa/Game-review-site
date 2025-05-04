@@ -60,11 +60,4 @@ Contributing
 Feel free to fork this repository, make your changes, and submit a pull request. Contributions are always welcome!
 
 License
-This project is open-source and available under the MIT License.
-
-yaml
-Copy code
-
----
-
-انسخه بالكامل، واذهب إلى صفحة التعديل في GitHub، والصقه هناك ثم اضغط "Commit changes".
+This project is open-source and available under the MIT License

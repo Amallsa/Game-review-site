@@ -25,20 +25,46 @@ This project allows users to:
 To get a copy of this project on your local machine, run:
 ```bash
 git clone https://github.com/Amallsa/Game-review-site.git
-### 2. Set up the database
-Import the `database_schema.sql` file into your MySQL database.
+2. Set up the database
+Open phpMyAdmin or MySQL Workbench.
 
-Update the database connection details in the `db_connect.php` file to match your local database credentials.
+Create a new database (e.g., game_reviews).
 
-### 3. Set up PHP and MySQL
-Ensure that PHP and MySQL are installed on your local server. You can use tools like XAMPP or MAMP to run your local server.
+Import the file database_schema.sql into that database to create the necessary tables (games, reviews, categories).
 
-### 4. Access the website
-Once the database is set up and the PHP/MySQL server is running, navigate to the project folder and open `index.php` in your browser.
+3. Configure the database connection
+Open the file db_connect.php.
 
-### 5. Contributing
-Feel free to fork this repository and submit pull requests with your improvements or fixes!
+Update the following variables to match your local database credentials:
 
-### 6. License
+php
+Copy code
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "game_reviews";
+4. Set up PHP and MySQL locally
+Make sure PHP and MySQL are installed (you can use XAMPP).
+
+Place the project folder inside the htdocs directory in XAMPP.
+
+5. Access the website
+Start Apache and MySQL from the XAMPP control panel.
+
+Open your browser and go to:
+
+bash
+Copy code
+http://localhost/Game-review-site/index.php
+Contributing
+Feel free to fork this repository, make your changes, and submit a pull request. Contributions are always welcome!
+
+License
 This project is open-source and available under the MIT License.
 
+yaml
+Copy code
+
+---
+
+انسخه بالكامل، واذهب إلى صفحة التعديل في GitHub، والصقه هناك ثم اضغط "Commit changes".
